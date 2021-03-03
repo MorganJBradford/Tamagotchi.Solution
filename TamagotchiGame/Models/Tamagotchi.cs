@@ -6,7 +6,7 @@ namespace TamagotchiGame.Models
 
     public Tamagotchi (string name)
     {
-      Name = "Potato";
+      Name = name;
     }
     
   }
