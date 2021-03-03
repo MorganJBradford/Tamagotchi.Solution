@@ -10,7 +10,7 @@ namespace TamagotchiGame.Models
     {
       Name = name;
       Hunger = 100;
-      Attention = 0;
+      Attention = 100;
     }
     
   }
