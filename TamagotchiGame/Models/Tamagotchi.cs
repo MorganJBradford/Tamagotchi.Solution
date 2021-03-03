@@ -12,7 +12,7 @@ namespace TamagotchiGame.Models
       Name = name;
       Hunger = 100;
       Attention = 100;
-      Sleepiness = 100;
+      Sleepiness = 0;
     }
     
   }
