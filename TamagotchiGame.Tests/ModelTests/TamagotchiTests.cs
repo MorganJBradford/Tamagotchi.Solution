@@ -45,5 +45,14 @@ namespace TamagotchiGame.Tests
       int result = newTamagotchi.Sleepiness;
       Assert.AreEqual(0, result);
     }
+
+    [TestMethod]
+    public void PassTime_SubtractsFromHunger_Int()
+    {
+      Tamagotchi newTamagotchi = new Tamagotchi("Daniel");
+      newTamagotchi.PassTime()
+      int result = newTamagotchi.Hunger;
+      Assert.AreEqual(90, result);
+    }
   }
 }
