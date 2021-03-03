@@ -50,7 +50,7 @@ namespace TamagotchiGame.Tests
     public void PassTime_SubtractsFromHunger_Int()
     {
       Tamagotchi newTamagotchi = new Tamagotchi("Daniel");
-      newTamagotchi.PassTime()
+      newTamagotchi.PassTime();
       int result = newTamagotchi.Hunger;
       Assert.AreEqual(90, result);
     }

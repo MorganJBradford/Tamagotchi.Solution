@@ -15,5 +15,9 @@ namespace TamagotchiGame.Models
       Sleepiness = 0;
     }
     
+    public void PassTime()
+    {
+      
+    }
   }
 }
