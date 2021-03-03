@@ -3,7 +3,7 @@ namespace TamagotchiGame.Models
   public class Tamagotchi
   {
     public string Name { get; set; }  
-    public int Hunger { get; }
+    public int Hunger { get; set; }
     public int Attention { get; }
     public int Sleepiness { get; }
 
@@ -17,7 +17,7 @@ namespace TamagotchiGame.Models
     
     public void PassTime()
     {
-      
+      Hunger -= 10;
     }
   }
 }
