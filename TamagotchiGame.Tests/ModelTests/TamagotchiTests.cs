@@ -21,5 +21,14 @@ namespace TamagotchiGame.Tests
       string result = newTamagotchi.Name;
       Assert.AreEqual(name, result);
     }
+
+    [TestMethod]
+    public void GetHunger_ReturnsHunger_Int()
+    {
+      int Hunger = 0;
+      Tamagotchi newTamagotchi = new Tamagotchi(Hunger);
+      int result = newTamagotchi.Hunger;
+      Assert.AreEqual(Hunger, result);
+    }
   }
 }
