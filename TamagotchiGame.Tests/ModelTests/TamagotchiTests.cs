@@ -12,5 +12,14 @@ namespace TamagotchiGame.Tests
       Tamagotchi newTamagotchi = new Tamagotchi();
       Assert.AreEqual(typeof(Tamagotchi), newTamagotchi.GetType());
     }
+
+    [TestMethod]
+    public void GetName_ReturnsName_String()
+    {
+      string name = "Daniel";
+      Tamagotchi newTamagotchi = new Tamagotchi(name);
+      string result = newTamagotchi.Name;
+      Assert.AreEqual(name, result);
+    }
   }
 }
