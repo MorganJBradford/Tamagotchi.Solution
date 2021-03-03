@@ -29,5 +29,13 @@ namespace TamagotchiGame.Tests
       int result = newTamagotchi.Hunger;
       Assert.AreEqual(100, result);
     }
+
+    [TestMethod]
+    public void GetAttention_ReturnsAttention_Int()
+    {
+      Tamagotchi newTamagotchi = new Tamagotchi("Daniel");
+      int result = newTamagotchi.Attention;
+      Assert.AreEqual(100, result);
+    }
   }
 }
