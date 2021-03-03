@@ -37,5 +37,13 @@ namespace TamagotchiGame.Tests
       int result = newTamagotchi.Attention;
       Assert.AreEqual(100, result);
     }
+
+    [TestMethod]
+    public void GetSleepiness_ReturnsSleepiness_Int()
+    {
+      Tamagotchi newTamagotchi = new Tamagotchi("Daniel");
+      int result = newTamagotchi.Sleepiness;
+      Assert.AreEqual(0, result);
+    }
   }
 }
