@@ -19,6 +19,7 @@ namespace TamagotchiGame.Models
     {
       Hunger -= 10;
       Attention -= 10;
+      Sleepiness += 10;
     }
   }
 }
