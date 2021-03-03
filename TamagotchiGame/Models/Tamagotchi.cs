@@ -4,8 +4,8 @@ namespace TamagotchiGame.Models
   {
     public string Name { get; set; }  
     public int Hunger { get; set; }
-    public int Attention { get; }
-    public int Sleepiness { get; }
+    public int Attention { get; set; }
+    public int Sleepiness { get; set; }
 
     public Tamagotchi (string name)
     {
@@ -18,6 +18,7 @@ namespace TamagotchiGame.Models
     public void PassTime()
     {
       Hunger -= 10;
+      Attention -= 10;
     }
   }
 }
