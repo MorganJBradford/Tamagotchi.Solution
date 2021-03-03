@@ -9,7 +9,7 @@ namespace TamagotchiGame.Tests
     [TestMethod]
     public void TamagotchiConstructor_CreateInstanceOfTamagotchi_Tamagotchi()
     {
-      Tamagotchi newTamagotchi = new Tamagotchi();
+      Tamagotchi newTamagotchi = new Tamagotchi("Daniel");
       Assert.AreEqual(typeof(Tamagotchi), newTamagotchi.GetType());
     }
 
