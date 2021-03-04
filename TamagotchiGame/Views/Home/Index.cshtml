@@ -1,14 +1,13 @@
-using Microsoft.AspNetCore.Mvc;
-
-namespace TamagotchiGame.Controllers
-{
-  public class HomeController : Controller
-  {
-    [HttpGet("/")]
-    public ActionResult Index()
-    {
-      return View();
-    }
-
-  }
-}
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Tamagotchi</title>
+</head>
+<body>
+  <h1>Welcome, fool.</h1>
+  <a href="/tamagotchis/new">Create a Tamagotchi, dawg</a>
+  <br>
+  <a href="/tamagotchis">View Tamagotchis</a>
+</body>
+</html>

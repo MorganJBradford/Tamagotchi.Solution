@@ -1,14 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
 using TamagotchiGame.Models;
+using System.Collections.Generic;
 
-namespace TamagotchiGame.Controllers
+namespace TamagotchisGame.Controllers
 {
   public class TamagotchisController : Controller
   {
     [HttpGet("/tamagotchis")]
     public ActionResult Index()
     {
-      return View();
+      List<Tamagotchi> allTamagotchis = Tamagotchi.GetAll();
+      return View(allTamagotchis);
     }
 
     [HttpGet("/tamagotchis/new")]
