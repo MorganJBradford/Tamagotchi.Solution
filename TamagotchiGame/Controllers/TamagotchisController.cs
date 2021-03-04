@@ -25,5 +25,13 @@ namespace TamagotchisGame.Controllers
       Tamagotchi myTamagotchi = new Tamagotchi(name);
       return RedirectToAction("Index");
     }
+
+
+    [HttpGet("/tamagotchis/{id}")]
+    public ActionResult Show(int id)
+    {
+      Tamagotchi foundTamagotchi = Tamagotchi.Find(id);
+      return View(foundTamagotchi);
+    }
   }
 }
